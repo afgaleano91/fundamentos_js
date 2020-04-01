@@ -15,9 +15,10 @@ var primeraLetradestring = nombre.charAt(0);
 var lengthnombre = nombre.length;
 
 // concatenar usando interpolacion
-var frasecompleta = `${nombre} ${apellido.toUpperCase()}` //tambien se puede llamar una funcion dentro de las llaves
+var frasecompleta = `${nombre} ${apellido.toUpperCase()}`//tambien se puede llamar una funcion dentro de las llaves
 
 // subStr permite sacar solo un conjunto de letras de algun string
 var srt = nombre.substr(0, 3);
-
-
+// al usar el metodo substr si el numero dado es negativo empieza de atras hacia adelante 
+// y si es positivo de adelante hacia atras
+var ultimaletra = nombre.substr(-1)
